@@ -1,0 +1,24 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+  color: grey;
+  &:hover {
+    color: black;
+  }
+}
+
+div {
+  background: #dee2e5;
+  padding: 20px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+#question {
+  margin-bottom: 20px;
+  color: grey;
+}

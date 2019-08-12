@@ -1,0 +1,22 @@
+<h1 class="m-auto">Chat</h1>
+
+<div class="m-4 p-4 rounded">
+
+  <h3 id="question">Coach - <%= params[:question] %></h3>
+
+  <% question = params[:question]
+
+  if question == "I am going to work"
+    @answer = "Great!"
+
+  elsif question =~ /.*\?$/
+    @answer = "Silly question, get dressed and go to work!"
+
+  else
+    @answer = "I don't care, get dressed and go to work!"
+  end
+  %>
+
+  <h3><%= "You - " + @answer %></h3>
+</div>
+<h5 class="mx-4"><a href="/question">ANSWER NEW QUESTION</a></h5>
